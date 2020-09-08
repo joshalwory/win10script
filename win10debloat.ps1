@@ -34,7 +34,7 @@ $tweaks = @(
 	"InstallAdobe",
 	"Install7Zip",
 	"InstallNotepadplusplus",
-	"InstallMediaPlayerClassic",
+	#"InstallMediaPlayerClassic",
 
 	### Windows Apps
 	"DebloatAll",
@@ -127,7 +127,7 @@ $tweaks = @(
 
 	### Explorer UI Tweaks ###
 	"ShowKnownExtensions",          # "HideKnownExtensions",
-	# "ShowHiddenFiles",              # "HideHiddenFiles",
+	"ShowHiddenFiles",              # "HideHiddenFiles",
 	"HideSyncNotifications"         # "ShowSyncNotifications",
 	# "HideRecentShortcuts",          # "ShowRecentShortcuts",
 	"SetExplorerThisPC",            # "SetExplorerQuickAccess",
@@ -151,14 +151,14 @@ $tweaks = @(
 	# "DisableThumbsDB",              # "EnableThumbsDB",
 
 	### Application Tweaks ###
-	"DisableOneDrive",              # "EnableOneDrive",
-	"UninstallOneDrive",            # "InstallOneDrive",
+	"EnableOneDrive",
+	"InstallOneDrive",
 	"UninstallMsftBloat",           # "InstallMsftBloat",
 	"UninstallThirdPartyBloat",     # "InstallThirdPartyBloat",
 	# "UninstallWindowsStore",      # "InstallWindowsStore",
 	# "DisableXboxFeatures",          # "EnableXboxFeatures",
 	"DisableAdobeFlash",            # "EnableAdobeFlash",
-	"InstallMediaPlayer", 		# "UninstallMediaPlayer",
+	#"InstallMediaPlayer", 		# "UninstallMediaPlayer",
 	"UninstallInternetExplorer",  # "InstallInternetExplorer",
 	"UninstallWorkFolders",       # "InstallWorkFolders",
 	"InstallLinuxSubsystem",      # "UninstallLinuxSubsystem",
@@ -216,14 +216,69 @@ Function Install7Zip {
 	choco install 7zip -y
 }
 
-Function InstallNotepadplusplus {
-	Write-Output "Installing Notepad++"
-	choco install notepadplusplus -y
+#Function InstallNotepadplusplus {
+#	Write-Output "Installing Notepad++"
+#	choco install notepadplusplus -y
+#}
+
+#Function InstallMediaPlayerClassic {
+	#Write-Output "Installing Media Player Classic (VLC Alternative)"
+	#choco install mpc-hc -y
+#}
+
+Function InstallChrome {
+	Write-Output "Installing Chrome"
+	choco install googlechrome -y
 }
 
-Function InstallMediaPlayerClassic {
-	Write-Output "Installing Media Player Classic (VLC Alternative)"
-	choco install mpc-hc -y
+Function Installqbittorrent {
+	Write-Output "Installing qbittorrent"
+	choco install qbittorrent -y
+}
+
+Function Installsteam {
+	Write-Output "Installing Steam"
+	choco install steam -y
+}
+
+Function InstallVLC {
+	Write-Output "Installing VLC"
+	choco install vlc -y
+}
+
+Function InstallNextCloud {
+	Write-Output "Installing NextCloud"
+	choco install nextcloud-client -y
+}
+
+Function InstallDiscord {
+	Write-Output "Installing Discord"
+	choco install discord -y
+}
+
+Function InstallGyazo {
+	Write-Output "Installing gyazo"
+	choco install gyazo -y
+}
+
+Function InstallOBS {
+	Write-Output "Installing OBS"
+	choco install obs-studio -y
+}
+
+Function InstallPlex {
+	Write-Output "Installing plex"
+	choco install plexmediaplayer -y
+}
+
+Function InstallTwitch {
+	Write-Output "Installing twitch"
+	choco install twitch -y
+}
+
+Function InstallPIA {
+	Write-Output "pia"
+	choco install pia -y
 }
 
 ##########
