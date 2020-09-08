@@ -35,6 +35,17 @@ $tweaks = @(
 	"Install7Zip",
 	"InstallNotepadplusplus",
 	#"InstallMediaPlayerClassic",
+	"InstallChrome",
+	"Installqbittorrent",
+	"Installsteam",
+	"InstallVLC",
+	"InstallNextCloud",
+	"InstallDiscord",
+	"InstallGyazo",
+	"InstallOBS",
+	"InstallPlex",
+	"InstallTwitch",
+	"InstallPIA",
 
 	### Windows Apps
 	"DebloatAll",
